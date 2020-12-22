@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Contact</title>
+	<!--Customized Css-->
+	<link rel="stylesheet" href="styles.css">
+	<!--Font awesome link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+ 
+<body>
+    <header class="header">
+		<a href="#default" class="logo">CompanyName</a>
+		<div class="header-right">
+			<a href="home.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="services.html">Service</a>
+			<a href="product.html">Product</a>
+			<a class="active" href="contact.html">Contact</a>
+		</div>
+	</header>
+
+<div>
+<h2>Contact Us </h2>
+
+<section class="contactus container clearfix">
+	<article class="form">
+		<h4 class="heading-bo"><u> <strong>Contact Form</strong></u></h4>
+		<form name="contactfrm" id="contactfrm" method="post" action="mail.php" >
+			<span><input type="text" name="fname" placeholder="First Name" required></span>
+			<span><input type="text" name="lname" placeholder="Last Name"></span>
+			<div class="clear"></div>
+			<span><input type="email" name="emailid" placeholder="Email" required></span>
+			<span><input type="text" name="phone" placeholder="Phone" required='number'></span>
+			<div class="clear"></div>
+            	<span class="full-width"><textarea name="subject" placeholder="Subject" class="full-width" required></textarea></span>
+			<span class="full-width"><textarea name="message" placeholder="Message" class="full-width" required></textarea></span>
+		<br>	<input type="submit" name="contact" value="Submit">
+		</form>
+	</article>
+	<aside class="touch">
+				
+		<ul>
+			<li><strong>Address:</strong>234, Loreum Ipsum</li>
+			<li><strong>Phone:</strong> 0294-4209211 , +91 9352 30 40 50 , 0294-24 26 000</li>
+			<li><strong>Email:</strong> <a href="mailto:contact@xyz.com">contact@xyz.com</a></li>
+		</ul>
+	</aside>
+</section>
+<script>
+$(document).ready(function() {
+	$.validator.addMethod("lettersonly", function(value, element) {
+		return this.optional(element) || /^[a-z\s]+$/i.test(value);
+	}, "Only alphabetical characters");
+	
+	$("#contactfrm").validate({
+		rules: {
+			fname: {
+				required: true,
+				lettersonly: true
+			},
+			lname: {
+				lettersonly: true
+			},
+			phone: {
+				required: true,
+				number: true,
+				minlength:10,
+				maxlength:10
+			},
+			message: "required",
+			emailid: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			fname: {
+				required: "Please enter your name",
+				lettersonly: "Please enter characters only"
+			},
+			lname: {
+				lettersonly: "Please enter characters only"
+			},
+			phone: {
+				required: "Please enter your phone number",
+				number: "Please enter numeric value only",
+				minlength: "Your phone number must be at least 10 digits"
+			},
+			emailid: "Please enter a valid email address",
+			message: "Please enter your message"
+		}
+	});
+
+});
+</script>
+    </div>
+     <footer class="site-footer">
+	<div class="container">
+	  <div class="row">
+
+		<div class="col-sm-12 col-md-6">
+		  <h6>ADDRESS</h6>
+		  <p class="text-justify">Address Line 1</p>
+		  <p class="text-justify">Address Line 2</p>
+		  <p class="text-justify">Address Line 3</p>
+		</div>
+
+		
+		
+		<div class="col-xs-6 col-md-6">
+		  <h6>Quick Links</h6>
+		  <ul class="footer-links">
+			<li><a href="#">Contribute</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Sitemap</a></li>
+		  </ul>
+		</div>
+
+	  </div>
+	  <div class="row">
+	  <div class="col-md-4 col-sm-6 col-xs-12">
+		<ul class="social-icons">
+		  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+		  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+		  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+		  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+		</ul>
+	  </div>
+	</div>
+	  <hr>
+	</div>
+</footer>
+
+</body>
+</html>
