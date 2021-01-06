@@ -1,0 +1,102 @@
+﻿@model ProductMgmtMvc.Models.ProductDetails
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2 >Create</h2>
+
+@using (Html.BeginForm("create","Main",FormMethod.Post,new { enctype ="multipart/form-data"}))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h3 align="center" style="font-weight:bold; font-size:30px;">Add Product</h3>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.product_name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.product_name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.product_name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.category_name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                <select class="form-control" name="category_name">
+                    <option>Shoes</option>
+                    <option>Men's Wear</option>
+                    <option>Women's Wear</option>
+                    <option>Mobile</option>
+                </select>  
+                
+               @Html.ValidationMessageFor(model => model.category_name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.price, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                <select class="form-control" name="quantity">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.short_des, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.short_des, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.short_des, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.long_des, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                 @Html.EditorFor(model => model.long_des, new { htmlAttributes = new { @class = "form-control" } }) 
+                @Html.ValidationMessageFor(model => model.long_des, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.smallimg, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="smallimg" class="form-control" id="smallimg">
+                @Html.ValidationMessageFor(model => model.smallimg, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.largeimg, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="largeimg" class="form-control" id="largeimg">
+                @Html.ValidationMessageFor(model => model.largeimg, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add Product" class="btn btn-sm btn-primary" />
+                <input type="button" value="Cancel" class="btn btn-sm btn-primary" onclick="location.href='@Url.Action("Index", "Main")'" />
+
+            </div>
+        </div>
+    </div>
+}
