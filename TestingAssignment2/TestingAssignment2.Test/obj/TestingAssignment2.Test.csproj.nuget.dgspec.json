@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2.Test\\TestingAssignment2.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2.Test\\TestingAssignment2.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2.Test\\TestingAssignment2.Test.csproj",
+        "projectName": "TestingAssignment2.Test",
+        "projectPath": "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2.Test\\TestingAssignment2.Test.csproj",
+        "packagesPath": "C:\\Users\\saurabh.singh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\saurabh.singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2\\TestingAssignment2.csproj": {
+                "projectPath": "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2\\TestingAssignment2.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2\\TestingAssignment2.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2\\TestingAssignment2.csproj",
+        "projectName": "TestingAssignment2",
+        "projectPath": "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2\\TestingAssignment2.csproj"
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "Knw4gn9HcN4FAyqVd1EaPsFzHvQ7Uq2bd7low+y6JEqWDnKu1Gh7XUvBl7slB0aZUJKML8+ZZ8rjfZxAx3VnHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\saurabh.singh\\Desktop\\Chandni\\TestingAssignment2\\TestingAssignment2.Test\\TestingAssignment2.Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\coverlet.collector\\1.0.1\\coverlet.collector.1.0.1.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\microsoft.codecoverage\\16.2.0\\microsoft.codecoverage.16.2.0.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\microsoft.net.test.sdk\\16.2.0\\microsoft.net.test.sdk.16.2.0.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\xunit\\2.4.1\\xunit.2.4.1.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\xunit.analyzers\\0.10.0\\xunit.analyzers.0.10.0.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\xunit.assert\\2.4.1\\xunit.assert.2.4.1.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
+    "C:\\Users\\saurabh.singh\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.1\\xunit.runner.visualstudio.2.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}
