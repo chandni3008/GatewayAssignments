@@ -40,18 +40,37 @@ namespace TestingAssignment2.Test
         }
 
         [Fact]
-        public void Test_IsLowerOrUpper(string inputString, string result)
+        public void Test_LowerCaseString()
         {
 
             // Arrange
-            
-            
+
+            var inputString = "chandni";
 
             // Act
-            
+
+            var newString = inputString.LowerCaseString();
 
             // Assert
-            
+
+            Assert.True(newString);
+
+        }
+
+        public void Test_UpperCaseString()
+        {
+
+            // Arrange
+
+            var inputString = "CHANDNI";
+
+            // Act
+
+            var newString = inputString.UpperCaseString();
+
+            // Assert
+
+            Assert.True(newString);
 
         }
 

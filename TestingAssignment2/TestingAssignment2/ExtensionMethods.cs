@@ -33,19 +33,32 @@ namespace TestingAssignment2
 
         }
 
-        public static string IsLowerOrUpper(this string inputString)
+        public static bool LowerCaseString(this string inputString)
         {
-            string result=null;
-        
-            foreach (char input in inputString)
+            bool Lower = true;
+            for (int index = 0; index < inputString.Length; index++)
             {
-                if (Char.IsLower(input))
-                   result = input + " is a Lower Case Character";
-                else if (Char.IsUpper(input))
-                   result = input + " is a upper Case Character";
-
+                if (Char.IsUpper(inputString[index]))
+                {
+                    Lower = false;
+                    break;
+                }
             }
-            return result;
+            return Lower ? true : false;
+        }
+
+        public static bool UpperCaseString(this string inputString)
+        {
+            bool Upper = true;
+            for (int index = 0; index < inputString.Length; index++)
+            {
+                if (Char.IsLower(inputString[index]))
+                {
+                    Upper = false;
+                    break;
+                }
+            }
+            return Upper ? true : false;
         }
 
         public static string Capitalize(this string inputString)
